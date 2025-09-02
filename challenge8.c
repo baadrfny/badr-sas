@@ -12,8 +12,8 @@ int main()
     printf("Entrer le 3eme nomber :");
     scanf("%f",&c);
 
-    
-    moyenne = pow(a*b*c,1.0/3.0);
+
+    moyenne = pow(a*b*c, 1/3);
 
     printf("La moyenne geometrique des 3 nomber est : %.2f",moyenne);
     
