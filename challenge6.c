@@ -11,6 +11,7 @@ int main()
     printf("Entrer le nombre b :");
     scanf("%f",&b);
 
+    
     printf("\n--- Resultats ---\n");
     printf(" %f + %f = %f\n",a,b,a+b);
     printf(" %f - %f = %f\n",a,b,a-b);

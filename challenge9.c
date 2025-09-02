@@ -22,6 +22,8 @@ int main( )
     printf("Entrer z2 :");
     scanf("%f",&z2);
 
+
+    
     distance = sqrt(pow(x2-x1,2)+pow(y2-y1,2)+pow(z2-z1,2));
 
     printf("La distance entre  les deux points en 3d est : %.2f",distance);

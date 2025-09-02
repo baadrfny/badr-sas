@@ -15,5 +15,6 @@ int main()
 
     printf("La moyenne ponderee des 3 nomber est : %.2f",moyenne);
     
+    
     return 0;
 }
