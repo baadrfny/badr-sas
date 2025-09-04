@@ -7,7 +7,7 @@ int main()
     printf("Entrez un nombre entier n : ");
     scanf("%d", &n);
 
-    printf("Les %d premiers nombres impairs sont :\n", n);
+    printf("Les %d premiers nombres impairs sont : ", n);
 
     for(x = 0; x < n; x++)
     {

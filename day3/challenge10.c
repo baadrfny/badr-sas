@@ -9,7 +9,7 @@ int main()
 
     if (n <= 0)
     {
-        printf("Veuillez entrer un entier positif.\n");
+        printf("Veuillez entrer un entier positif.");
     }
     else
     {
@@ -18,7 +18,7 @@ int main()
             somme += x;
         }
         
-        printf("La somme des %d premiers entiers naturels est : %d\n", n, somme);
+        printf("La somme des %d premiers entiers naturels est : %d", n, somme);
     }
 
     return 0;

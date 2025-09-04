@@ -3,25 +3,26 @@
 
 int main()
 {
-    int x = 0, n;
+    int i = 0, n;
 
     printf("Entrez un nombre n : ");
     scanf("%d", &n);
 
     if (n <= 0)
     {
-        printf("Veuillez entrer un entier positif.\n");
+        printf("Veuillez entrer un entier positif");
     }
     else
     {
-        while (n != 0)
+        while (n > 0)
         {
             n = n / 10;
-            x++;
+            i++;
         }
+        
     }
 
-    printf("Nombre de chiffres = %d.", x);
+    printf("Nombre de chiffres est : %d", i);
     
     return 0;
 }

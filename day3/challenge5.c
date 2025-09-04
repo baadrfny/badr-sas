@@ -3,7 +3,7 @@
 int main()
 {
     int x, base, expo;
-    double result = 1.0;
+    int result = 1.0;
 
     printf("Entrez la valeur de la base : ");
     scanf("%d", &base);
@@ -11,22 +11,18 @@ int main()
     printf("Entrez la valeur de l'exposant : ");
     scanf("%d", &expo);
 
-    if(expo >= 0)
+    if (expo == 0)
     {
-        for(x = 0; x < expo; x++)
-        {
-            result *= base;
-        }
+        printf("= 1");
     }
-    else
+
+    while (expo > 0)
     {
-        for(x = 0; x < -expo; x++)
-        {
-            result *= base;
-        }
-        result = 1.0 / result;
+        result = result * base;
+        expo --;
     }
-    printf("%d^%d = %.2lf\n", base, expo, result);
+    printf("= %d ",result);
+    
 
     return 0;
 }

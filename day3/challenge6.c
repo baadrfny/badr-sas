@@ -2,18 +2,18 @@
 
 int main()
 {
-    int x, n;
+    int  n;
 
     printf("Entrez un nombre entier n : ");
     scanf("%d", &n);
 
-    printf("Les %d premiers nombres pairs sont :\n", n);
+    printf("Les %d premiers nombres pairs sont :", n);
 
-    for(x = 0; x < n; x++)
+    for(int i = 0; i < n; i++)
     {
-        printf("%d", 2 * x);
+        printf("%d", 2 * i);
 
-        if (x < n - 1) {
+        if (i < n - 1) {
             printf(", ");
         }
 
