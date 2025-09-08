@@ -20,32 +20,32 @@ int main()
     {
     case 1:
         mois = annee * 12;
-        printf("%d annee(s) equivalent a %d mois.\n", annee, mois);
+        printf("%d annee equivalent a %d mois.\n", annee, mois);
         break;
     case 2:
         jours = annee * 365;
-        printf("%d annee(s) equivalent a %d jours.\n", annee, jours);
+        printf("%d annee equivalent a %d jours.\n", annee, jours);
         break;
     case 3:
         jours = annee * 365;
         heures = jours * 24;
-        printf("%d annee(s) equivalent a %d heures.\n", annee, heures);
+        printf("%d annee equivalent a %d heures.\n", annee, heures);
         break;
     case 4:
         jours = annee * 365;
         heures = jours * 24;
         minutes = heures * 60;
-        printf("%d annee(s) equivalent a %d minutes.\n", annee, minutes);
+        printf("%d annee equivalent a %d minutes.\n", annee, minutes);
         break;
     case 5:
         jours = annee * 365;
         heures = jours * 24;
         minutes = heures * 60;
         secondes = minutes * 60;
-        printf("%d annee(s) equivalent a %d secondes.\n", annee, secondes);
+        printf("%d annee equivalent a %d secondes.\n", annee, secondes);
         break;
     default:
-        printf("Choix invalide. Veuillez entrer un nombre entre 1 et 5.\n");
+        printf("Choix invalide. Veuillez entrer un nombre entre 1 et 5");
         break;
     }
 

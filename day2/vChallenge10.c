@@ -11,23 +11,23 @@ int main()
 
     printf("Entrez la date au format jj/mm/aaaa : \n");
 
-    printf("Entrez le jour : \n");
+    printf("Entrez le jour : ");
     scanf("%d", &jour);
-    printf("Entrez le mois : \n");
+    printf("Entrez le mois : ");
     scanf("%d", &mois);
-    printf("Entrez l'annee : \n");
+    printf("Entrez l'annee : ");
     scanf("%d", &annee);
 
     if (mois < 1 || mois > 12)
     {
-        printf("Le mois n'est pas valide\n");
+        printf("Le mois n'est pas valide");
 
         return 1;
     }
 
     if (jour < 1 || jour > 31)
     {
-        printf("Le jour n'est pas valide\n");
+        printf("Le jour n'est pas valide");
 
         return 1;
     }

@@ -9,23 +9,23 @@ int main()
 
     if (mention < 10 && mention >= 0)
     {
-        printf("Recale\n");
+        printf("Recale");
     }
     else if (mention >= 10 && mention < 12)
     {
-        printf("Passable\n");
+        printf("Passable");
     }
     else if (mention >= 12 && mention < 14)
     {
-        printf("Assez bien\n");
+        printf("Assez bien");
     }
     else if (mention >= 14 && mention < 16)
     {
-        printf("Bien\n");
+        printf("Bien");
     }
     else if (mention >= 16 && mention <= 20)
     {
-        printf("Tres bien\n");
+        printf("Tres bien");
     }
     else
     {

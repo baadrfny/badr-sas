@@ -15,17 +15,17 @@ int main()
         x1 = ((-b + sqrt(delta))/(2*a));
         x2 = ((-b - sqrt(delta))/(2*a));
 
-        printf("Les deux solutions reelles: x1 = %.2f et x2 = %.2f\n", x1, x2);
+        printf("Les deux solutions reelles: x1 = %.2f et x2 = %.2f", x1, x2);
     }
     else if (delta == 0)
     {
-        x1 = (-b/2*a);
+        x1 = -b/(2*a);
 
-        printf("Une solution reelle: x = %.2f\n", x1);
+        printf("Une solution reelle: x = %.2f", x1);
     }
     else if (delta < 0)
     {
-        printf("Pas de solution !\n");
+        printf("Pas de solution !");
     }
     return 0;
 }
