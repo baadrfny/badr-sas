@@ -23,7 +23,7 @@ int main()
             {
                 printf(", %d", n / i);
             }
-            if (i != limite || i != n / i) // juste pour ne pas mettre une virgule finale en trop
+            if (i != limite || i != n / i) 
                 printf(", ");
         }
     }

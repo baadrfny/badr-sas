@@ -8,7 +8,7 @@ int main() {
     printf("Entrez la longueur du mot de passe: ");
     scanf("%d", &length);
 
-    char chars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+    char chars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     int size = sizeof(chars) - 1;
 
     srand(time(NULL));
