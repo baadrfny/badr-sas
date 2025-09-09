@@ -1,14 +1,46 @@
+
 #include <stdio.h>
 
-int main() {
-    int tab[] = {1,2,3,4,6};
-    int a,b;
-    printf("entrer les deuc valeur pour remplacer :");
-    scanf("%d %d", &a, &b);
-    for(int i=0;i<5;i++)
-        if(tab[i]==a)
-            tab[i] = b;
-    for(int i=0;i<5;i++)
-        printf("%d ", tab[i]);
+int main()
+{
+    int T[10], n, vr, vn, i;
+
+    printf("Entrez le nombre d'elements du tableau  : ");
+    scanf("%d", &n);
+
+    if (n > 10)
+    {
+        printf("Le nombre d'elements doit etre inferieur ou egal a 10\n");
+        return 1;
+    }
+
+    printf("Entrez les elements du tableau : \n");
+    for (i = 0; i < n; i++)
+    {
+        printf("Element %d : ", i+1);
+        scanf("%d", &T[i]);
+    }
+
+    printf("Entrez la valeur a remplacer : ");
+    scanf("%d", &vr);
+    
+    printf("Entrez la nouvelle valeur : ");
+    scanf("%d", &vn);
+
+    for (i = 0; i < n; i++)
+    {
+        if (T[i] == vr)
+        {
+            T[i] = vn;
+        }
+    }
+
+    printf("Tableau modifie : \n");
+    for (i = 0; i < n; i++)
+    {
+        printf("%d ", T[i]);
+    }
+    printf("\n");
+
     return 0;
 }

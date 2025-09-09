@@ -1,21 +1,31 @@
 #include <stdio.h>
 #include <string.h>
 
-void inverser_chaine(char str[]){
-    int i=0,j=strlen(str)-1;
-    while(i<j){
-        char t = str[i];
-        str[i] = str[j];
-        str[j] = t;
-        i++;
-        j--;
-    }
+void inverse(char str[])
+{
+    int start = 0, end = strlen(str) - 1;
+
+    while (start < end)
+    {
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+
+        start++;
+        end--;
+    }   
 }
 
-int main() {
-    char s[100];
-    scanf("%s", s);
-    inverser_chaine(s);
-    printf("%s", s);
+int main()
+{
+    char str[100];
+
+    printf("Entrez une chaine : ");
+    scanf("%s", str);
+
+    inverse(str);
+
+    printf("chaine inversee est : %s", str);
+
     return 0;
 }

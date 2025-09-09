@@ -6,7 +6,9 @@ int somme(int a, int b){
 
 int main() {
     int x, y;
+    printf("entrer deux nomber :");
     scanf("%d %d", &x, &y);
     printf("%d", somme(x,y));
     return 0;
 }
+

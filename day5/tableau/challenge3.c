@@ -6,11 +6,17 @@ int main() {
     printf("entrer le nomber element :");
     scanf("%d", &n);
     int tab[n];
+    int sum=0;
+    for (int i = 0; i < n; i++)
+    {
+        printf("entrer le T[%d]",i+1);
+        scanf("%d",&tab[i]);
+        sum+=tab[i];
+    }
+    printf("La somme est : %d",sum);
     
     
-    int sum = 0;
-    for(int i=0;i<5;i++)
-        sum += tab[i];
-    printf("la somme du tableu : %d", sum);
+   
+    
     return 0;
 }

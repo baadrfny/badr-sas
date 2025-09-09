@@ -11,7 +11,7 @@ int main() {
     char chars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     int size = sizeof(chars) - 1;
 
-    srand(time(NULL));
+    srand(1);
     printf("Mot de passe: ");
     for (int i = 0; i < length; i++) {
         printf("%c", chars[rand() % size]);

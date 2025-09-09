@@ -1,12 +1,22 @@
 #include <stdio.h>
 
-int maximum(int a, int b){
-    return a>b ? a : b;
+int minimum(int a, int b) {
+    
+    if (a<b)
+    {
+        printf("%d est inferieur a %d ",a,b);
+    }
+    else {
+        printf("%d est inferieur a %d",b,a);
+    }
+    
 }
 
 int main() {
-    int x, y;
-    scanf("%d %d", &x, &y);
-    printf("%d", maximum(x,y));
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    minimum(a,b);
     return 0;
 }
+
